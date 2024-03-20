@@ -1,0 +1,1 @@
+chmod 777 ClickHouse/aiq/user_scripts/embed.py 

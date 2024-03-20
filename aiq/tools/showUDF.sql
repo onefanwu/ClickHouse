@@ -1,0 +1,1 @@
+SELECT * FROM system.functions WHERE origin == 'ExecutableUserDefined'

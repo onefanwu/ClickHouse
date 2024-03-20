@@ -1,0 +1,35 @@
+function:
+    type: executable_pool
+    name: embed
+    pool_size: 64
+    max_command_execution_time: 1000
+    send_chunk_header: true
+    format: TabSeparated
+    command: 'embed.py'
+    command_read_timeout: 100000
+    return_type: Array(Float32)
+    argument:
+        type: String
+
+function:
+    type: executable_pool
+    name: embed_fake
+    pool_size: 64
+    max_command_execution_time: 1000
+    send_chunk_header: true
+    format: TabSeparated
+    command: 'embed_fake.py'
+    command_read_timeout: 100000
+    return_type: Array(Float32)
+    argument:
+        type: String
+
+function:
+    type: executable
+    name: embed_no_pool
+    format: TabSeparated
+    command: 'embed_no_pool.py'
+    command_read_timeout: 100000
+    return_type: Array(Float32)
+    argument:
+        type: String

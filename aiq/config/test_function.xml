@@ -1,0 +1,29 @@
+<functions>
+    <function>
+        <type>executable</type>
+        <name>test_function_python</name>
+        <return_type>String</return_type>
+        <argument>
+            <type>UInt64</type>
+            <name>value</name>
+        </argument>
+        <format>TabSeparated</format>
+        <command>test_function.py</command>
+    </function>
+    <function>
+        <type>executable</type>
+        <name>test_function_sum</name>
+        <return_type>UInt64</return_type>
+        <argument>
+            <type>UInt64</type>
+            <name>lhs</name>
+        </argument>
+        <argument>
+            <type>UInt64</type>
+            <name>rhs</name>
+        </argument>
+        <format>TabSeparated</format>
+        <command>cd /; clickhouse-local --input-format TabSeparated --output-format TabSeparated --structure 'x UInt64, y UInt64' --query "SELECT x + y FROM table"</command>
+        <execute_direct>0</execute_direct>
+    </function>
+</functions>

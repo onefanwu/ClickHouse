@@ -1311,7 +1311,8 @@
     <wait_dictionaries_load_at_startup>true</wait_dictionaries_load_at_startup>
 
     <!-- Configuration of user defined executable functions -->
-    <user_defined_executable_functions_config>*_function.*ml</user_defined_executable_functions_config>
+    <user_defined_executable_functions_config>/workdir/AiQ-dev/ClickHouse/aiq/config/*_function.*ml</user_defined_executable_functions_config>
+    <user_scripts_path>/workdir/AiQ-dev/ClickHouse/aiq/user_scripts</user_scripts_path>
 
     <!-- Path in ZooKeeper to store user-defined SQL functions created by the command CREATE FUNCTION.
      If not specified they will be stored locally. -->
